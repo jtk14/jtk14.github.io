@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald&display=swap');
+
+
+ body{
+    font-family: 'Oswald', sans-serif;
+    background-color: antiquewhite;
+ }
+
+.wrapper{
+    background-color: azure;
+}
+
+nav{
+    text-align: center;
+    font-size: larger;
+    background-color: saddlebrown;
+    border: solid;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.construct{
+    background-image: url(images/Construction-PNG-Transparent-Picture.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 701px;
+    float: left;
+}
+
+main{
+    background-color: antiquewhite;
+    padding: 5px 300px
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
+}
+
+header{
+    font-family:'Fredericka the Great', 'Serif' ;
+    background-color: saddlebrown;
+    letter-spacing: .15em; 
+    padding: 1px 0 1px 200px;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 185px;
+    height: 183px;
+    border-top: solid;
+    border-right: solid;
+    border-left: solid;
+}
+
+footer{
+    background-color: saddlebrown;
+    border: solid;
+    text-align: center;
+}
+
+p{
+    padding-left: 1%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+ a{
+    text-decoration: none;
+ }
+
+a:link{
+    color: antiquewhite
+ }
+
+a:visited{
+    color: antiquewhite;
+ }
+
+a:hover{
+    color:grey
+ }
+
+.construct{
+    background-image: url(images/Construction-PNG-Transparent-Picture.png);
+    background-size: 100% 100%;
+}
