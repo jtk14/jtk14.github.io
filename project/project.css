@@ -53,7 +53,7 @@ footer {
 
 main {
     background-color: #B09E76;
-    padding: 5px 5%; /* Adjust padding for responsiveness */
+    padding: 5px 5%;
 }
 
 nav li {
@@ -153,9 +153,11 @@ nav li .active {
     flex-wrap: wrap;
 }
 
-#buttons button{
+button{
+    background: #5d4c35;
+    border: 0;
+    color: #F0E7D3;
     padding: 10px;
-    background-color:#7F694A;
     border-radius: 5px;
 }
 
@@ -172,11 +174,49 @@ nav li .active {
     padding-bottom: 1%;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row wrap;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 10px;
+    background-color: #F0E7D3;
+    border: 5px solid #F0E7D3;
+    box-shadow: 2px 2px 6px 0px #5d4c35;
+  }
 
-/* Media query for tablets */
+  .card img{
+    border-radius: 3px;
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  
+  .card .text {
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  
+  .card .text button {
+    width: 100%;
+  }
+
+  .text p{
+    text-wrap: nowrap;
+  }
+
+
+/* Media query for tablets and smaller screens */
 @media screen and (max-width: 1100px) {
     main {
-        padding: 5px 10px; /* Adjust padding for tablets */
+        padding: 5px 10px; 
     }
 
     header{
@@ -193,12 +233,19 @@ nav li .active {
     h2{
         font-size: 2em;
     }
+    .card {
+        width: 200px;
+        margin: 10px;
+        background-color: #F0E7D3;
+        border: 5px solid #F0E7D3;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      }
 }
 
 /* Media query for mobile devices */
 @media screen and (max-width: 480px) {
     nav {
-        font-size: medium; /* Adjust font size for mobile devices */
+        font-size: medium;
         height: auto;
         margin-top: 1;
     }
@@ -214,11 +261,19 @@ nav li .active {
     }
 
     header {
-        background-size: 100%; /* Adjust background size for mobile devices */
-        height: auto; /* Auto height for responsiveness */
+        background-size: 100%;
+        height: auto;
         background-image: none;
         padding: 0;
         padding-bottom: 5px;
     }
+
+    .card {
+        width: 150px;
+        margin: 10px;
+        background-color: #F0E7D3;
+        border: 5px solid #F0E7D3;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      }
 
 }
