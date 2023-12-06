@@ -1,86 +1,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald&display=swap');
 
-
- body{
+body {
     font-family: 'Oswald', sans-serif;
-    background-color: antiquewhite;
- }
-
-.wrapper{
-    background-color: azure;
+    background-color: #B09E76;
+    margin: 0; 
 }
 
-nav{
+.wrapper {
+    background-color: black;
+}
+
+nav {
     text-align: center;
     font-size: larger;
-    background-color: saddlebrown;
-    border: solid;
+    background-color: #7F694A;
     position: sticky;
     top: 0;
     z-index: 100;
-
 }
 
-.construct{
+/* .construct {
     background-image: url(images/Construction-PNG-Transparent-Picture.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 700px;
-    width: 701px;
+    width: 50%;
     float: left;
+} */
+
+
+header {
+
+    font-family:'Fredericka the Great', 'Serif' ;
+    text-align: center;
+    font-size: larger;
+    justify-content: center;
+    background-color: #F0E7D3;
+    letter-spacing: .15em; 
+    padding-top: 5%;
+    background-image: url(images/final_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: 270px;
 }
 
-main{
-    background-color: antiquewhite;
-    padding: 5px 300px
+
+footer {
+    background-color: #F0E7D3;
+    border: solid;
+    text-align: center;
 }
 
-nav li{
+main {
+    background-color: #B09E76;
+    padding: 5px 5%; /* Adjust padding for responsiveness */
+}
+
+nav li {
     list-style-type: none;
     display: inline;
     padding: 0 10px;
 }
 
-header{
-    font-family:'Fredericka the Great', 'Serif' ;
-    background-color: saddlebrown;
-    letter-spacing: .15em; 
-    padding: 1px 0 1px 200px;
-    background-image: url(images/logo.png);
-    background-repeat: no-repeat;
-    background-size: 185px;
-    height: 183px;
-    border-top: solid;
-    border-right: solid;
-    border-left: solid;
+nav a {
+    line-height: 40px;
+    display: inline-block;
 }
 
-footer{
-    background-color: saddlebrown;
-    border: solid;
-    text-align: center;
-}
-
-p{
+p {
+    display: flex;
+    margin: 5% 15%;
+    justify-content: center;
     padding-left: 1%;
+    text-indent: 3%;
 }
 
-h1{
+h1 {
     font-size: 3em;
 }
 
- a{
+h2 {
+    font-family:'Fredericka the Great', 'Serif' ;
+    text-transform: uppercase;
+    color:#5d4c35;
+    /* font-variant: small-caps; */
+    font-size: 3em;
+    text-align: center;
+}
+
+a {
     text-decoration: none;
- }
+}
 
-a:link{
-    color: antiquewhite
- }
+a:link {
+    color: #214D31;
+}
 
-a:visited{
-    color: antiquewhite;
- }
+a:visited {
+    color: #214D31;
+}
 
-a:hover{
-    color:grey
- }
+a:hover {
+    color: #7F694A;
+}
+
+nav a:link {
+    color: #F0E7D3;
+}
+
+nav a:visited {
+    color: #F0E7D3;
+}
+
+nav a:hover {
+    color: #B09E76;
+}
+
+nav li .active {
+    color: #214D31;
+}
+
+#homeimg {
+    display: flex;
+    justify-content: center ;
+    /* border: solid; */
+}
+
+#homeimg img{
+
+    width: 75%;
+    border-radius: 15px;
+}
+
+#family {
+    display: flex;
+    justify-content: center ;
+}
+
+#family img{
+    border: 5px solid #F0E7D3;
+    width: 60%;
+    border-radius: 15px;
+}
+
+#buttons {
+
+    /* border: solid; */
+    display: flex;
+    margin: 0 40%;
+    /* padding: 0 75%; */
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+#buttons button{
+    padding: 10px;
+    background-color:#7F694A;
+    border-radius: 5px;
+}
+
+#about{
+    display: flex;
+    /* border: solid; */
+    flex-wrap: wrap;
+    padding-top: 3%;
+}
+
+#about p{
+    /* border: solid; */
+    margin: 0 15%;
+    padding-bottom: 1%;
+}
+
+
+/* Media query for tablets */
+@media screen and (max-width: 1100px) {
+    main {
+        padding: 5px 10px; /* Adjust padding for tablets */
+    }
+
+    header{
+        background-image: none;
+        height: auto;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: medium; /* Adjust font size for mobile devices */
+        height: auto;
+        margin-top: 1;
+    }
+
+    nav li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    nav a {
+        line-height: normal;
+        display: block;
+    }
+
+    header {
+        background-size: 100%; /* Adjust background size for mobile devices */
+        height: auto; /* Auto height for responsiveness */
+        background-image: none;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+}
