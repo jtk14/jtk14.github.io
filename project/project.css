@@ -17,6 +17,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* border: solid; */
 }
 
 /* .construct {
@@ -51,6 +52,10 @@ footer {
     text-align: center;
 }
 
+footer a{
+    text-decoration: underline;
+}
+
 main {
     background-color: #B09E76;
     padding: 5px 5%;
@@ -60,6 +65,9 @@ nav li {
     list-style-type: none;
     display: inline;
     padding: 0 10px;
+    /* border: solid; */
+    margin-right: 30px;
+
 }
 
 nav a {
@@ -209,7 +217,7 @@ button{
   }
 
   .text p{
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
 
 
@@ -245,14 +253,17 @@ button{
 /* Media query for mobile devices */
 @media screen and (max-width: 480px) {
     nav {
+        display: block;
         font-size: medium;
         height: auto;
-        margin-top: 1;
     }
 
     nav li {
+        text-align: center;
         display: block;
         padding: 10px 0;
+        /* border: solid; */
+        margin-right: 30px;
     }
 
     nav a {

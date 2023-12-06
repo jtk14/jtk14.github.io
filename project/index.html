@@ -11,17 +11,18 @@
 	<link rel="stylesheet" href="project.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="images/final_logo.jpg">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VVZ8CJ59B"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-9VVZ8CJ59B');
+	</script>
+	
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VVZ8CJ59B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9VVZ8CJ59B');
-</script>
 
 <body>
 	<div id="wrapper">
@@ -48,8 +49,14 @@
 				Rock Creek products will leave your customers with long-lasting memories of their visit to your shop.
 			</p>
 			<div id="buttons">
-				<a href="products.html"><button> View Products</button></a>
-				<a href="about.html"><button> Learn About Us</button></a>
+				<form action="products.html">
+					<button> View Products</button>
+				</form>
+				<form action="about.html">
+					<button> Learn About Us</button>
+				</form>
+				<!-- <a href="products.html"><button> View Products</button></a>      This had a validation error, forms are what should be used for button links-->
+				<!-- <a href="about.html"><button> Learn About Us</button></a> -->
 			</div>
 		</main>
         <footer>
